@@ -1,0 +1,7 @@
+.imageHome{
+  background-image: url('../images/Illustration.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  height: 100vh;
+}
