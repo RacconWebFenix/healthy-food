@@ -83,6 +83,9 @@
   body {
     overflow-x: hidden;
   }
+  .logo{
+    margin-top: 1rem;
+  }
   .nav {
     position: fixed;
     top: 8vh;
@@ -106,12 +109,6 @@
     right: 0.7rem;
     display: block;
     transition: all 0.3s ease-in;
-  }
-
-  .logo{
-    top: 0px;
-    position: fixed;
-    text-shadow:  0 0 10px #4d6505;
   }
 
   .container {

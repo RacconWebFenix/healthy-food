@@ -7,7 +7,7 @@
 }
 
 .containerRecipes h1 {
-    font-size: 1rem;
+  font-size: 1rem;
   color: #1d164d;
 }
 
@@ -28,13 +28,10 @@
   border-radius: 10px;
   background-color: #fff;
   margin: 1rem;
-  border: 1px solid red;
-  box-shadow: 0 0 15px black;
-  height: 30vh;
-  width: 70vh;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.050);
+  width: 28rem;
+  height: 12rem;
 }
-
-
 
 .cardRecipeContainer img {
   height: 100%;
@@ -45,12 +42,12 @@
   flex-direction: column;
   justify-content: center;
   margin: 1.5rem;
-  border: 1px solid red;
+
   background-color: #fff;
 }
-.innerCardRecipe h2{
-    color: #1d164d;
-    font-size: 1rem;
+.innerCardRecipe h2 {
+  color: #1d164d;
+  font-size: 1rem;
 }
 .innerCardRecipe button {
   background-color: #badc58;
@@ -59,41 +56,74 @@
   border: none;
   padding: 1rem;
   border-radius: 10px;
-  width: 70%;
-  font-size: 0.5rem;
+  width: 8rem;
+  font-size: 0.9rem;
 }
 .cardsRecipes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
+  .containerRecipes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .cardsRecipes {
     display: flex;
+    align-items: center;
     flex-direction: column;
     overflow: hidden scroll;
     width: 100%;
-
   }
-  .cardRecipeContainer img{
-    height: 100%;
   
-}
 }
 
 @media screen and (max-width: 500px) {
-    .cardRecipeContainer{
-      width: 90%;
-      height: 30%;
+    .cardsRecipes{
+      width: 100%;
     }
-   
+    .cardRecipeContainer{
+     width: 23rem;
+     height: 10rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .cardsRecipes{
+    width: 100%;
+  }
+  .cardRecipeContainer{
+   width: 20rem;
+   height: 8rem;
+  }
 }
 
 @media screen and (max-width: 350px) {
-  .cardRecipeContainer{
-    width: 90%;
-    height: 35%;
+  .cardsRecipes{
+    width: 100%;
   }
- 
-}
+
+  .cardRecipeContainer h2{
+    font-size: 0.8rem;
+  }
+
+  .cardRecipeContainer button{
+    margin: 0;
+    width: 6rem;
+    height: 2.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.4rem;
+
+  }
+  
+
+  .cardRecipeContainer{
+   width: 16rem;
+   height: 6rem;
+  }
+}  
