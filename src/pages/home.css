@@ -1,0 +1,67 @@
+.containerHome {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  height: 100vh;
+  width: 50vh;
+  justify-content: center;
+
+}
+
+.leftContainer h1 {
+  font-size: 300%;
+  color: #1d164d;
+}
+
+.question {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.question input {
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 3px;
+  border: 0.5px solid #1d164d;
+}
+
+.question button {
+  padding: 0.8rem;
+  color: #fff;
+  background-color: #badc58;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 4px;
+  font-weight: lighter;
+  margin-left: 2vh;
+  width: 3rem;
+  height: 3rem;
+}
+
+.rigthContainer {
+  position: absolute;
+  right: 0;
+  display: flex;
+  z-index: -3;
+  height: 100vh;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1025px) {
+  .rigthContainer {
+    transition: all 0.3s;
+    opacity: 0.4;
+  }
+  .leftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 80%;
+  }
+}

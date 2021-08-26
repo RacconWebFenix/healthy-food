@@ -1,0 +1,99 @@
+.containerRecipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafc;
+  height: 100vh;
+}
+
+.containerRecipes h1 {
+    font-size: 1rem;
+  color: #1d164d;
+}
+
+.decRecipe {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #adabbb;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+}
+
+.cardRecipeContainer {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 1rem;
+  border: 1px solid red;
+  box-shadow: 0 0 15px black;
+  height: 30vh;
+  width: 70vh;
+}
+
+
+
+.cardRecipeContainer img {
+  height: 100%;
+}
+
+.innerCardRecipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem;
+  border: 1px solid red;
+  background-color: #fff;
+}
+.innerCardRecipe h2{
+    color: #1d164d;
+    font-size: 1rem;
+}
+.innerCardRecipe button {
+  background-color: #badc58;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 0.5rem;
+}
+.cardsRecipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardsRecipes {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden scroll;
+    width: 100%;
+
+  }
+  .cardRecipeContainer img{
+    height: 100%;
+  
+}
+}
+
+@media screen and (max-width: 500px) {
+    .cardRecipeContainer{
+      width: 90%;
+      height: 30%;
+    }
+   
+}
+
+@media screen and (max-width: 350px) {
+  .cardRecipeContainer{
+    width: 90%;
+    height: 35%;
+  }
+ 
+}
