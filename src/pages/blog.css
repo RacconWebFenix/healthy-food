@@ -1,0 +1,142 @@
+.containerBlogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafc;
+  justify-content: space-around;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.cardsBlogs {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.slider {
+  display: flex;
+  width: 100%;
+  z-index: 0;
+}
+
+.containerBlogs h1 {
+  font-size: 2rem;
+  color: #1d164d;
+}
+
+.decBlogs {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #adabbb;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+}
+
+.cardBlogContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 1rem;
+
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.05);
+  width: 20rem;
+  height: 24rem;
+}
+.innerCardBlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem;
+  background-color: #fff;
+}
+.innerCardBlog h2 {
+  margin-top: 0;
+  color: #1d164d;
+  font-size: 1.5rem;
+}
+.personBlog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.personBlog img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.personBlog p {
+  color: #adabbb;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .cardBlogContainer {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardBlogContainer {
+    width: 16rem;
+  }
+}
+
+
+@media screen and (max-width: 930px) {
+  .cardBlogContainer {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .cardBlogContainer {
+    width: 13rem;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .cardBlogContainer {
+    width: 12rem;
+    height: 22rem;
+  }
+}
+
+
+@media screen and (max-height: 568px) {
+  .cardBlogContainer {
+    width: 12rem;
+    height: 18rem;
+  }
+  .cardBlogContainer h2 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media screen and (max-width: 280px) {
+  .containerBlogs h1 {
+    font-size: 1rem;
+  }
+  .decBlogs {
+    font-size: 0.5rem;
+  }
+  .cardBlogContainer {
+    width: 9.5rem;
+    height: 16rem;
+  }
+  .cardBlogContainer h2 {
+    font-size: 0.8rem;
+  }
+}

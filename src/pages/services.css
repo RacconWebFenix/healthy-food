@@ -1,6 +1,6 @@
 .containerServices {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
   }
 
@@ -12,10 +12,53 @@
  }
 
  .rigthContainerService{
-   display: flex;
-   margin-left: 25rem;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    margin: 1rem;
+ }
+
+ .rigthContainerService h1{
+  color: #1d164d;
+  font-size: 2rem;
+ }
+
+ .rigthContainerService p{
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #adabbb;
+ }
+
+ .rigthContainerService button{
+    margin-top: 1rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.2rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #badc58;
+    box-shadow: 0 3px 10px #badc58;
+    width: 8rem;
+    
+ }
+
+
+ @media screen and (max-width: 1025px) {
+   .containerServices{
+    display: flex;
+    justify-content: center;
+  
+   }
+  .leftContainerService{
+   display: none;   
+  }
+  .rigthContainerService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+  }
  }
