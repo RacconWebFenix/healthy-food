@@ -4,7 +4,7 @@ import backImgJoin from "../images/bloco_final_image.svg";
 
 export default function Join() {
   return (
-    <div className="containerJoin">
+    <div className="containerJoin" id="join">
       <section className="leftContainerJoin">
         <h1>Join our membership to get special offer</h1>
         <div className="questionJoin">

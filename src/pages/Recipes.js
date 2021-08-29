@@ -7,7 +7,7 @@ import recImg4 from "../images/comida_4.svg";
 
 export default function Recipes() {
   return (
-    <div className="containerRecipes">
+    <div className="containerRecipes" id="healthyRecipes">
       <h1>Our Best Recipes</h1>
       <div className="decRecipe">
         Far far away, behind the word mountains, far from the countries Vokalia

@@ -106,7 +106,7 @@ export default function Blog() {
     ],
   };
   return (
-    <div className="containerBlogs">
+    <div className="containerBlogs" id="blog">
       <h1>Read Our Blog</h1>
       <div className="decBlogs">
         Far far away, behind the word mountains, far from the countries Vokalia
