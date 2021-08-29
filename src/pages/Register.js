@@ -1,12 +1,24 @@
 import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Schema from "../components/Schema/Schema";
+import { toast } from "react-toastify";
 import "./register.css";
 
 export default function Register() {
-  function onSubmit(values, actions) {
-    
+  function onSubmit(values, onSubmitProps) {
+   
+    const data = values;
+    if(data){
+        toast.success('Registro salvo com sucesso.')
+    }
+    const minhaLista = localStorage.getItem("users");
+    let savesUsers = JSON.parse(minhaLista) || [];
+    savesUsers.push(data);
+    localStorage.setItem("users", JSON.stringify(savesUsers));
+
+    onSubmitProps.resetForm();
   }
+
 
   function onBlurCep(e, setFieldValue) {
     const { value } = e.target;
@@ -37,7 +49,15 @@ export default function Register() {
         onSubmit={onSubmit}
         initialValues={{
           name: "",
+          birth: "",
           email: "",
+          cep: "",
+          logradouro: "",
+          numero: "",
+          complemento: "",
+          bairro: "",
+          cidade: "",
+          uf: "",
         }}
         render={({ values, errors, touched, isValid, setFieldValue }) => (
           <Form>
@@ -47,7 +67,7 @@ export default function Register() {
               <ErrorMessage name="name" />
             </div>
             <div className="formControlGroup">
-              <label>Nome</label>
+              <label>Data de Nascimento</label>
               <Field name="birth" type="date" />
               <ErrorMessage name="name" />
             </div>
