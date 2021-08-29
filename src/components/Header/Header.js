@@ -43,16 +43,16 @@ const HandleNavLinks = () => {
         </div>
         <ul className={nav}>
           <li className="nav-links" >
-            <Link to="/">Healthy Recipies</Link>
+            <Link to="#Recipes">Healthy Recipies</Link>
           </li>
           <li className="nav-links">
-            <Link  to="/">Blog</Link>
+            <Link  to="#blog">Blog</Link>
           </li>
           <li className="nav-links">
-            <Link  to="/">Join</Link>
+            <Link  to="#join">Join</Link>
           </li>
           <li className="nav-links">
-            <button className={"btnRegister"}><Link  to="/">Register</Link></button>
+            <button className={"btnRegister"}><Link  to="/register">Register</Link></button>
           </li>
         </ul>
       </div>
