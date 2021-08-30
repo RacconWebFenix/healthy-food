@@ -100,7 +100,6 @@
     transform: translateX(100vh);
     transition: transform 0.3s ease-in;
     z-index: 5;
-  
   }
   .nav li {
     margin-left: 0;
