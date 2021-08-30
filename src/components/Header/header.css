@@ -19,6 +19,7 @@
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+
 }
 
 .nav a {
@@ -87,16 +88,16 @@
   }
   .nav {
     position: fixed;
-    margin-top: 0;
-    top: 0;
-    width: 150vh;
-    height: 100vh;
+    top: -3vh;
+    right: 0;
+    width: 30vh;
+    height: 103vh;
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.7);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    transform: translateY(-100vh);
+    transform: translateX(100vh);
     transition: transform 0.3s ease-in;
     z-index: 5;
   
@@ -126,7 +127,7 @@ a {
 .nav.active {
   transition: transform 0.3s ease-in;
   display: flex;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .mobileMenu.active .line1 {
