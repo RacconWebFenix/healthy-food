@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
@@ -7,6 +7,26 @@ export default function Header() {
   const [mobileMenu, setMobileMenu] = useState("mobileMenu");
 
   const menuItens = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  const teste = window.document.querySelector('body')
+
+  teste.style.animation = "blurMode 0.5s ease forwards"
+ 
+  useEffect(() => {
+    if (teste.current) {
+       const handler = (event) => {
+         console.log(`We've been blurred`);
+       }
+       // notice that i get a reference to the element here, so i can safely use it in the clean function
+       const element = teste.current
+       element.addEventListener('blur', handler);
+       // this is a clean function that will be called to clear the side effects you just introduced
+       return () => element.removeEventListener('blur', handler);
+  
+    }
+  
+  
+  }, [])
 
   menuItens.forEach((item) => {
     item.addEventListener("click", scrollToIdOnClick);
