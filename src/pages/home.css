@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1025px) {
   .rigthContainer {
-    display: none;
+    position: absolute;
     transition: all 0.3s;
     opacity: 0.4;
   }
